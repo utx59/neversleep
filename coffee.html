@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>大型玩偶-拿鐵灰兔</title>
+    <link rel="icon" type="image/x-icon" href="image/icon/avocado.png">
+    <link rel="stylesheet" href="css/allproduct.css">
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/projectblock1.css">
+    <link rel="stylesheet" href="css/projectdeteail.css">
+    <link rel="stylesheet" href="css/allcomment.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/allmembercomment.css">
+    <!-- 搜尋框放大鏡圖示連結 -->
+    <script src="https://kit.fontawesome.com/fd066d1aee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- scrip -->
+    <script>
+        function openDialog(dialogId) {
+            var dialog = document.getElementById(dialogId);
+            dialog.showModal();
+        }
+
+        function closeDialog(dialogId) {
+            var dialog = document.getElementById(dialogId);
+            dialog.close();
+        }
+    </script>
+    
+    <!--buynum scrip -->
+    <script>
+        function minus(){
+            var num = document.getElementsByClassName("num")[0].value;
+            if(num>1){
+                document.getElementsByClassName("num")[0].value = num-1;
+            }
+        }
+        function add(){
+            var num = document.getElementsByClassName("num")[0].value;
+            if(num<100){
+                document.getElementsByClassName("num")[0].value = Number(num)+1;
+            }
+        }
+    </script>
+
+    <!-- header -->
+    <header id="00">
+        <!-- 左邊logo -->
+        <div>
+            <a href="index.html" class="logo">
+                <img src="image/icon/title.png" class="headerimg">
+            </a>
+        </div>
+
+        <!-- 超連結標籤 -->
+        <nav class="headernav">
+            <div>
+                <ul class="headerul">
+                    <li class="label">
+                        <select name="select" class="selectbar" onchange="javascript:location.href=this.value;">
+                            <option class="headeroption" value="#">商品類別</option>
+                            <option class="headeroption" value="allproduct.html">所有商品</option>
+                            <option class="headeroption" value="dolls.html">大型玩偶</option>
+                            <option class="headeroption" value="papertapes.html">紙膠帶</option>
+                            <option class="headeroption" value="mobile.html">智慧型產品周邊</option>
+                        </select>
+                    </li>
+                    <li class="label">
+                        <a href="aboutus.html" class="choose">關於我們</a>
+                    </li>
+                    <li class="label">
+                        <a href="qa.html" class="choose">常見問題</a>
+                    </li>
+                    <li class="label">
+                        <a href="cart.html" class="choose">購物車</a>
+                    </li>
+                    <li class="label">
+                        <!-- 開啟對話框 -->
+                        <button onclick="openDialog('login')" class="choose headerbutton">會員中心</button>
+                        <!-- 對話框內容 -->
+                        <dialog id="login" class="headerdialog"> 
+                            <h2 class="headerh2">登入／註冊</h2>
+                            <hr class="headerhr">
+                            <p class="headerp">已有帳號，立即登入！</p>
+                            <input type="button" value="登入" class="allbutton" onclick="location.href='login.html'">
+                            <hr class="headerhr">
+                            <p class="headerp">還沒有帳號嗎？立即註冊！</p>
+                            <input type="button" value="註冊" class="allbutton" onclick="location.href='register.html'">
+                            <hr class="headerhr">
+                            <button onclick="closeDialog('login')" class="headerin">訪客模式</button>
+                        </dialog>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 搜尋欄 -->
+            <div class="wrap">
+                <div class="search">
+                    <input class="searchbar" type="text" name="search" id="search" placeholder=" Search for something?">
+                    <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- section -->
+    <div class="block">
+        <!-- imgblock -->
+        <div class="slides">
+            <div class="imgslides">
+                <img src="image/dolls/coffee.jpg">
+            </div>
+        </div>
+        
+        <!-- buy_project -->
+        <section class="productintroduce">
+            <div class="title">拿鐵灰兔</div>
+            <div class="intoduce">
+                拿鐵灰給人帶來沉穩大器的氣質，18公分的大小無論抱在懷中入睡或是當作可愛的擺設都非常適合。
+            </div>
+            <div class="numprice txt">
+                <div class="inventory">
+                    庫存：99
+                </div>
+                <div class="buynum">
+                    <input type="button" value="-" class="numbutton1" onclick="minus()">
+                    <input type="text" value="1" class="num">
+                    <input type="button"value="+" class="numbutton2" onclick="add()">
+                </div>
+                <div class="price txt">
+                    $950
+                </div>
+            </div>
+            <!-- 加入購物車按鈕 -->
+            <button onclick="openDialog('infoModal')" class="butit"> Buy it </button>
+
+            <!-- 對話框內容 -->
+            <dialog id="infoModal"> 
+                <p>該商品已加入購物車！<br>可以繼續購物啦！</p>
+                <button onclick="closeDialog('infoModal')" class="allbutton">確認</button>
+            </dialog>
+        </section >
+    </div>
+
+    <!-- product detail_block2 -->
+    <div class="block">
+        <div class="producttab">
+            <!--detail 頁籤右-->
+            <input type="radio" class="checktab" name="checktab" id="tab1" checked>
+            <label for="tab1" class="detail">商品詳細資訊</label>
+            <div class="detailcontent">
+                <ul class="uldetail">
+                    <h2>商品材質</h2><hr>
+                    <li>聚脂纖維</li>
+                </ul>
+                <ul class="uldetail">
+                    <h2>商品尺寸</h2><hr>
+                    <li>長18cm，寬9cm</li>
+                </ul>
+            </div>
+
+            <!--comment 頁籤左-->
+            <input type="radio" class="checktab" name="checktab" id="tab2">
+            <label for="tab2" class="detail">顧客評論</label>
+            <div class="detailcontent">
+                <div class="allcomment">
+                    <!--評論留言區-->
+                    <!--評論按鈕-->
+                    <div class="intocomment">
+                        <button type="submit">我要評論！</button>
+                    </div>
+                    <!--感謝評論-->
+                    <div class="thankcomment">
+                        <div class="thanktext">
+                            Thanks for rating us!
+                        </div>
+                        <div class="edit">
+                            EDIT
+                        </div>
+                    </div>
+                    <!--評論-->
+                    <div class="comment">
+                        <div class="commenttitle">
+                            <h2>評論</h2>
+                            <button type="button" class="close" id="close" aria-label="Close"></button>
+                        </div>
+                        <form action="#">
+                            <!--星星-->
+                            <div class="star">
+                                <input type="radio" name="rate" id="star5">
+                                <label for="star5" class="fas fa-star"></label>
+
+                                <input type="radio" name="rate" id="star4">
+                                <label for="star4" class="fas fa-star"></label>
+
+                                <input type="radio" name="rate" id="star3">
+                                <label for="star3" class="fas fa-star"></label>
+
+                                <input type="radio" name="rate" id="star2">
+                                <label for="star2" class="fas fa-star"></label>
+
+                                <input type="radio" name="rate" id="star1">
+                                <label for="star1" class="fas fa-star"></label>
+                            </div>
+                            <!--評論輸入框-->
+                            <div class="textarea">
+                                <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                            </div>
+                            <!--評論送出-->
+                            <div class="getcomment">
+                                <button type="submit">送出</button>
+                            </div>
+                        </form> 
+                    </div>
+
+                    
+                </div>
+                <hr class="commentbtdown">
+                <!--所有顧客評論-->
+                <div class="allmembercomment">
+                    <!--member commemt1-->
+                    <div class="membercomment1">
+                        <div class="allcommenttitle">
+                            <img src="./image/icon/user.png" width="80%" alt="">
+                        </div>
+                        <div class="memberstar">
+                            <h2>yichen</h2><!--member name-->
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="membercomment">
+                            <h3>2023-05-25</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ducimus atque nam qui ullam amet, id animi quasi sequi sint earum quisquam enim fugit. Recusandae?</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--member commemt2-->
+                    <div class="membercomment1">
+                        <div class="allcommenttitle">
+                            <img src="./image/icon/user.png" width="80%" alt="">
+                        </div>
+                        <div class="memberstar">
+                            <h2>ut</h2><!--member name-->
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="membercomment">
+                            <h3>2023-05-22</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime perferendis autem sunt odio, totam quaerat veniam possimus exercitationem dolores mollitia.</p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!--member commemt3-->
+                    <div class="membercomment1">
+                        <div class="allcommenttitle">
+                            <img src="./image/icon/user.png" width="80%" alt="">
+                        </div>
+                        <div class="memberstar">
+                            <h2>Meythy</h2><!--member name-->
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="membercomment">
+                            <h3>2023-05-18</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam et perspiciatis dignissimos beatae iure eligendi aperiam dolor, exercitationem omnis quaerat facere, porro hic blanditiis accusamus autem cupiditate. Quo similique sed nam nulla sunt sint tenetur laborum impedit dolorem enim doloribus perferendis itaque accusamus, et amet, dicta ut id, dignissimos repudiandae?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--comment js-->
+                <script>
+                    const intocomment = document.querySelector(".intocomment");
+                    const getcomment = document.querySelector(".getcomment");
+                    const thankcomment = document.querySelector(".thankcomment");
+                    const comment = document.querySelector(".comment");
+                    const editBtn = document.querySelector(".edit");
+                    const closebtn= document.querySelector(".close");
+                    const allmembercomment = document.querySelector(".allmembercomment");
+                    intocomment.onclick= () => {
+                        comment.style.display = "block";
+                        intocomment.style.display = "none";
+                        allmembercomment.style.display = "none";
+                        closebtn.addEventListener("click", function(){
+                        comment.close();})
+                        closebtn.onclick= () => {
+                            comment.style.display = "none";
+                            intocomment.style.display = "block";
+                            allmembercomment.style.display = "block";
+                        }
+                        getcomment.onclick= () => {
+                            intocomment.style.display = "none";
+                            allmembercomment.style.display = "none";
+                            comment.style.display = "none";
+                            thankcomment.style.display = "block";
+                            editBtn.onclick = () => {
+                                comment.style.display = "none";
+                                thankcomment.style.display = "none";
+                                intocomment.style.display = "block";
+                                allmembercomment.style.display = "block";
+                            }
+                            return false;
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <!--回頂端圖件-->
+        <a href="#00" class="gotop">
+          <img src="image/icon/gotop.png" style="border-radius:50% ;" class="backtop">
+        </a>
+    </div>
+
+
+    <!-- footer -->
+    <div class="fixclear"></div>
+    <footer>
+        <h5 class="footerh5">
+            ©neversleepiland 2023<br>
+            瀏覽人數：100人<br>
+            <a href="aboutus.html" target="_blank">about us</a> | <a href="qa.html" target="_blank">Q&A</a>
+        </h5>
+    </footer>
+</body>
+</html>

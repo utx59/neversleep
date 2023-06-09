@@ -1,0 +1,63 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-color: #fefae0;
+}
+
+.title {
+    /* 「常見問題」排版 */
+    text-align: center;
+    padding: 20px;
+}
+
+.question {
+    /* 問題排版 */
+    background-color: #d5bdaf;
+    width: 60%;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.answer {
+    display: none;
+    background-color: #d6ccc2;
+    width: 60%;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    /* transition: color 0.3s ease-in; */
+}
+
+.question:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.questionp {
+    background-color: #d5bdaf;
+    font-weight: bold;
+    float: 90%;
+}
+
+.answerp {
+    background-color: #d6ccc2;
+    font-weight: bold;
+    float: 90%;
+}
+
+.gotop {
+    position: fixed;
+    bottom: 2%;
+    width: 5%;
+    height: auto;
+    right: 2%;
+    float: right;
+    z-index: 99;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* answer框顏色:#e3d5ca */

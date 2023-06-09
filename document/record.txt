@@ -1,0 +1,164 @@
+(2023.04.21 ut)
+大家可以把圖片存在image資料夾中，再按照自己的商品類別創建資料夾分類！
+dolls資料夾中存放玩偶類商品，所有圖片均來源於jellycat官網
+每項商品我都只儲存了一張圖片，但▲我有點希望我們能做出像蝦皮那樣一個品項可以滑動照片查看的效果，這個部分應該會放在最後
+商品介紹是參考官網+自己打一些，如果大家有其他欄位需求都可以再增加，我也會再補齊～
+
+(2023.04.25 Meythy)
+我的商品是以3C為主的!(但聽說好像只有台灣會說3C，所以我改成和Dinotaeng官網一樣用Mobile)
+但是我的商品沒有放洗滌說明欄，所以那部份我先空著!
+另外因為我目前的商品那三個滑鼠墊，我還在思考是否把他們放在同一個系列商品內並歸類成三個選項這樣，但我怕後端會做死掉，這部分還可以再討論一下!
+
+(2023.04.25 ut)
+統一意見！
+●超連結需不需要加target:_blank使開啟新連結時皆可新增分頁
+●aboutus.html中可能需含六位組員名稱+店家介紹、理念介紹、商標發想，我個人覺得這樣的關於我們會比較完整
+header.html及header.css架構已完成，（已解決）改進：游標挪到商標上時放大的位置非置中的問題、顏色等
+footer.html及footer.css架構已完成，（已解決）改進：字體、後端須更改瀏覽人數連接、配色、版權等
+
+(2023.04.26 yichen)
+我找紙膠帶都是【樂意Loidesign】這個廠商的
+圖片我都各找了5張，△也是在想做出幻燈或自動滾動的效果(可以放之後所有初步做出來再做調整)
+然後圖片的出處→大部分都是擷取樂意Loidesign平台的圖，少部分有在誠品書局、Pinkoi、Creema平台上擷取
+介紹大部分是參考網路上的介紹，再以自己介紹想法與參考文拼湊打出來的（所以有些可能有點不太順的地方，能再跟我說　我再改！）
+
+(2023.04.26 ut)
+allproduct.html及allproduct.css架構已完成，▲改進：圖片放大動畫時文字會移位（要找固定文字的方法）、後續標籤區塊出來後要如何排版
+dolls.html及papertapes.html架構已完成，皆使用allproduct.css，這兩個檔案是預備用
+（也就是使用者點進已分類的商品區塊後會使用到的模板）（papertapes.html點進去是dolls的商品是正常的，因為我都複製同一個只是給他不同命名！）
+目前因為不確定mobil商品部分會不會有變動所以先沒有做！
+
+(2023.04.27 Meythy)
+更新進度:allproduct.html更改 + mobile.html 完成
+
+我的商品部份最後決定不改了!因為如果把滑鼠墊跟耳機殼獨立出來的話，另外兩個筆電包會落單，而且耳機殼也有型號的問題，這樣後端會不好做事，所以我的商品維持原樣! (芋廷不好意思，我把你所有產品那頁事先留的分類刪掉了，改成"智慧型產品周邊")
+然後苡臻我傳的這份更新是你紙膠帶那頁圖片還沒改過大小的，所以要再請你改一下喔!!
+
+(2023.04.27 ut)
+更改login.html及login.css
+更改內容為login.html中帳號密碼輸入及登入註冊按鈕分為兩個div
+css更改內容為將背景寬度稍微調小、輸入欄位寬度調小病加上圓角以及將html的style項目放入css中
+（已解決）登入紐refresh的動畫效果會從上到下降落，這部分可能需要再debug
+
+(2023.04.28 yichen)
+更改：(1)papertapes.html的商品名稱（縮短文字）(2)papertapes.css照片（動畫放大）比例調整 & 照片圓角
+註冊會員register.html及register.css已架構完成（你們可以看哪裡需要調整的！）
+（●之後如果做成動畫效果，在＂性別選項＂那看要不要在調整以button或其他方式呈現）
+（已解決）同上，註冊會員的【重置&註冊鈕】refresh的動畫效果會從上到下降落，這部分可能需要再debug
+
+(2023.04.28 Meythy)
+簡單小改，性別部份我多加了其他(尊重LGBTQ+)，然後帳戶我改成帳戶名稱，就安餒而已
+
+(2023.04.30 ut)
+將目前所有檔案引入header.html及footer.html
+footer不知道為什麼會碰不到底端，技術問題待解決
+login.css和register.css在*大括號中加入background-color: #fefae0;後會有部分色塊亂掉所以我最後沒有亂動，這部分想再請苡臻幫忙一下！
+
+(2023.05.03 yichen)
+更改：(1)加入login.css和register.css內的背景顏色已加入（增加body{background-color: #fefae0;}）
+(2)footer的底部問題已修改完成！（在每個html的＜iframe　src="footer.html"＞內增加了height="140px"，並在login.css、register.css、allproduct.css、papertapes.css內加入iframe{}的設定，footer.css的body{margin設定改→margin-top:1cm}）（這是我唯一試出來可以的結果！ 如果之後想再改試其他方式也可以）
+（已解決）然後發現hearder的：hover圖放大後會被卡掉，之後需要修改
+
+(2023.05.08 Meythy)
+我把購物車和結帳完會出現的訂單明細頁面簡單做好了!(cart.html & endpurchase.html)如果覺得哪邊還能改的再告訴我!
+▲待更動: 1.各個商品介紹頁出來後會在購物車頁面的商品名稱加超連結
+         2.想在轉到訂單明細頁面的同時跳出alert，上面寫已收到訂單這樣，那要用JavaScript寫，我寫的跑不出來==，之後想辦法
+         3.我這兩個頁面都沒有加動畫，如果之後要加我再改!(以解決)
+
+(2023.05.10 ut)
+可以點開header.html查看已完成的部分！css也有更動
+問題：（已解決）
+1. 用iframe引用header.html時下拉式選單會被內文遮住
+2. 用header.html以外的檔案（如allproducts.html）打開時，無法正確連結至超連結（點選常見問題卻無法正常跳轉頁面）
+3. 滑鼠按下去後的顏色css須更改
+4. 下拉式選單css未設定
+
+(2023.05.12 ut)
+改了非常非常多東西，幾乎所有網頁都需要重新更新，建議直接複製過去！（包含css）
+然後需要請大家幫我看看有沒有跑版 thank you!!
+在商品展示頁加上了「加入購物車」按鈕，按下去會跳出提示視窗！
+header.html及header.css已被我刪除，現在用的header是header1.html及header1.css
+問題：購物車跟header1中有一部分ul標籤重疊，未找到解決辦法（已解決）
+
+(2023.05.20 Meythy)
+購物車部份上次討論要改的地方都有了!(如果有的話再提醒我，我可能忘了)
+購物車的收件人資料區塊不知道為什麼沒辦法容納兩個下拉式選單，所以我把付款方式和取貨方式結合在一起了(目前想到最好的辦法)
+也有另外再加東西上去，像是備註和按鈕小動畫等，看起來整個網站比較統一一點!
+然後我在思考我們是不是需要做後台的頁面?我們的評分範圍好像沒有要後台，但是之前我們組當後端的時候有!
+
+(2023.05.21 ut)
+每個檔案都動過(html跟css可以直接全部複製！)
+會員中心新增彈跳視窗連結登入與註冊
+header跟footer已全部更新，大家可以幫我檢查是不是都跟index一樣了！
+有地方需要大家幫忙：
+（已解決）login和register的css中的h2要幫我建立class，也就是h2的css不能是h2{}，可以改成.loginh2{}和.reh2{}才不會影響到會員登入的彈跳視窗字體
+（已解決）背景顏色問題！應該都是跟上面一樣將css重新命名就可以了
+▲endpurchase和cart的css背景顏色問題也再麻煩了！
+
+(2023.05.21 yichen)
+login和register的背景問題已調整好！
+增設：aside.html及aside.css，但有把aside.html直接固定(以插入)於三大類別網頁（dolls.html,mobile.html,papertapes.html）！
+▲發現問題：
+(1)header的商品類別下拉選項，若點選一大項目後，停留的字還是在"商品類別"(是原本就想這樣設定嗎？)
+(2)header的"nav"在視窗縮小後，板塊會跳出！
+
+
+(2023.05.22 ut)
+login.html和register.html背景問題、h2字體大小已解決
+index.html已全部完成
+▲輪播廣告按太急會跳掉
+
+(2023.05.25 Meythy)
+這次把Go Top 做好了，然後上次檔案發現在cart.html / endpurchase.html / login.html 裡面配色會亂掉，確認是allproduct.css / qa.css / index.css 中 直接在*{}寫 background-color 的問題，後來把它們都改成 body {} 後就解決了。所以上面提及的檔案都有動過! 但因為被我改成 body{} 後，按下會員中心會跳出來的視窗顏色也被我弄掉了，如何把顏色弄回去這個部份我要再研究一下，其他我看都OK!但避免我眼瞎禍首殘動到檔案，請大家再幫我檢查一下有沒有地方還有問題!有的話我再改一下
+
+(2023.05.27 yichen)
+《新增設檔案》
+（１）html>>所有各項商品的html（檔案命名方式：與圖檔名相同！！）
+▲大型玩偶 跟 智慧型產品周邊 的各品項.html >> 需要大家幫忙把各自改一下內容部分（Excel的資料），以下為須改地方：
+▲<title>內的標籤內容(EX.<title>紙膠帶-郁色Aromatic</title>)
+▲<!-- imgblock -->下的img（但照片比例全部需改成：正方形 1:1，不然會跑版）
+▲<div class="title">郁色</div> 裡面的"商品名"
+▲<div class="price txt">$290</div> 裡面的"價格"
+▲<!--detail 頁籤右--> 下面的 商品材質 與 商品尺寸內的"li標籤內的文字"
+
+（２）allmembercomment.html（已留言評論）、comment.html（要留言的評論區）、projectdeteail.html（block2的頁籤）
+（３）CSS>> allmembercomment.css（已留言評論）、comment.css（要留言的評論區）、projectdeteail.css（block2的頁籤）、projectblock1.css（block1的排版）
+（4）image/icon>> user.png、close.png
+
+《加入所有連結》
+"3大類別"及 "所有商品"的html四個檔的所有連結<a>
+
+《微更改檔案內容》
+allproduct.css>> (1).title{} >> 調整為所有商品頁面用，並增加.title3{}用於三大類別的標題  (2).all{}有設計一點顏色板塊
+allproduct.html>> <body>增加class="allproduct"  、   allproduct.css>> .title 改成 .allproduct .title 
+cart.html>> <body>增加class="carttitle"  、   cart.css>> .title 改成 .carttitle .title 
+（！！很多檔發現都用了.title{} 重複的css！！）【不要再單一只用.title 或是單一class名，不然很容易就重複到】
+
+〔這次修改的地方有點多，所以需要大家幫忙再看看〕
+
+(2023.06.03 ut)
+將所有商品詳情頁面填寫完成、商品詳情頁面按下buy it按鈕後跳出dialog顯示已加入購物車
+將cart.html色塊顯示錯誤部分更改完成
+detailpage.html為商品詳情頁面樣板
+
+(2023.06.03 yichen)
+會員中心創建好了！>>member Centre.html、member Centre.css
+▲member Centre.html的要用於那裡的連結，再請芋廷幫忙設定喽！
+
+《微更改檔案內容》
+projectblock1.css>>(1)有調整一下圖片大小、圖的邊角圓  (2)商品的title字體有調"粗體"
+《問題》
+▲商品詳情頁面的buy it按鈕，感覺在有幾個商品頁中，按鈕高度有被壓縮變矮（但這小問題，如果最後沒改到也沒關係）
+
+(2023.06.04 Meythy)
+後台網頁完成! 網頁部分有 backstage.html / allorders.html / allgoods.html ，以及對應名字的css!
+然後所有頁面我都有加icon上去了!麻煩再幫我注意有沒有沒加到的地方，謝謝!
+~更改部分~
+購物車和完成購買頁面，我都有將表格多增加三排，是收件人資訊的部分，因為發現後台會看不到要出貨去哪裡，所以後來有加!
+QA有增加幾個，那看芋廷你要怎麼加回答上去!之後再跟我說
+
+(2023.06.04 ut)
+endpurchase.html（回購物車按鈕改為回首頁）
+aboutus.html新增回頂端按鈕
+allgoods.html刪除修改商品按鈕
+qa.html及qa.css新增答案欄位與效果

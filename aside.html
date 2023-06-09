@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromatic</title>
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <script src="https://kit.fontawesome.com/fd066d1aee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- allproduct menu -->
+    <aside>
+        <ul>
+            <a href="allproduct.html" class="allgoods">商品目錄</a>
+            <hr>
+            <li>
+                <a class="asidemenu1"><i class="fas fa-angle-right dropdown"></i>玩偶商品</a>
+                <ul class="detailmenu1">
+                    <li class="detailproject"><a href="dolls.html">酪梨寶寶</a></li>
+                    <li class="detailproject"><a href="dolls.html">微笑豆苗</a></li>
+                    <li class="detailproject"><a href="dolls.html">紐結麵包寶寶</a></li>
+                    <li class="detailproject"><a href="dolls.html">馬卡龍粉粹花愛心兔</a></li>
+                    <li class="detailproject"><a href="dolls.html">檸檬黃兔</a></li>
+                    <li class="detailproject"><a href="dolls.html">拿鐵灰兔</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="asidemenu2"><i class="fas fa-angle-right dropdown"></i>紙膠帶商品</a>
+                <ul class="detailmenu2">
+                    <li class="detailproject"><a href="papertapes.html">郁色</a></li>
+                    <li class="detailproject"><a href="papertapes.html">光隙Meteor</a></li>
+                    <li class="detailproject"><a href="papertapes.html">爍色Twinkle</a></li>
+                    <li class="detailproject"><a href="papertapes.html">My Dear</a></li>
+                    <li class="detailproject"><a href="papertapes.html">出差少女Business Trip</a></li>
+                    <li class="detailproject"><a href="papertapes.html">美好生活 Life</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="asidemenu3"><i class="fas fa-angle-right dropdown"></i>3C產品商品</a>
+                <ul class="detailmenu3">
+                    <li class="detailproject"><a href="papertapes.html">Quakka(大頭)滑鼠墊</a></li>
+                    <li class="detailproject"><a href="papertapes.html">Quakka(棉花糖)滑鼠墊</a></li>
+                    <li class="detailproject"><a href="papertapes.html">Quakka(外太空)滑鼠墊</a></li>
+                    <li class="detailproject"><a href="papertapes.html">Quakka筆電包</a></li>
+                    <li class="detailproject"><a href="papertapes.html">棉花糖筆電包</a></li>
+                    <li class="detailproject"><a href="papertapes.html">Quakka papa 耳機殼</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <!-- detailproject openjsp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>        
+    $(document).ready(function(){
+        $('.asidemenu1').click(function(){
+            $(this).next('.detailmenu1').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+            $(".detailmenu2").hide("slow");
+            $(".detailmenu3").hide("slow");
+        });
+
+        $('.asidemenu2').click(function(){
+            $(this).next('.detailmenu2').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+            $(".detailmenu1").hide("slow");
+            $(".detailmenu3").hide("slow");
+        });
+        $('.asidemenu3').click(function(){
+            $(this).next('.detailmenu3').slideToggle();
+            $(this).find('.dropdown').toggleClass('rotate');
+            $(".detailmenu1").hide("slow");
+            $(".detailmenu2").hide("slow");
+        });
+    });
+    </script>
+</body>
+</html>

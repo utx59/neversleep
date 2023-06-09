@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+body {
+    background: #fefae0;
+}
+
+.block {
+    padding: 1cm 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+div.slides {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 75%;
+}
+
+.imgslides {
+    width: 80%;
+    margin-top: 7%;
+}
+
+.imgslides img {
+    width: 110%;
+    height: 110%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+/*project */
+
+.productintroduce {
+    margin-left: 20px;
+    padding: 10px 10px;
+    width: 100%;
+    display: row;
+    text-align: center;
+}
+
+.productintroduce>div {
+    height: auto;
+}
+
+.productintroduce .title {
+    padding: 5px 10px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-indent: 20px;
+    text-align: center;
+    border: 10px #b8cf82 double;
+}
+
+.intoduce {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    text-align: justify;
+    border: 5px wheat;
+}
+
+.butit {
+    width: 86%;
+    height: 10%;
+    background: rgb(200, 221, 147);
+    border-radius: 50px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.butit:hover {
+    background: rgb(239, 255, 198);
+    width: 90%;
+    /*height: 11%;*/
+    font-size: 23px;
+}
+
+/*projectnum & inventory & price*/
+
+.numprice {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 10px;
+    margin: 10px 40px;
+}
+
+.inventory {
+    font-size: 15px;
+    font-style: italic;
+    float: left;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+input.num {
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.numbutton1,
+.numbutton2 {
+    width: 15%;
+    text-align: center;
+    font-size: 20px;
+    background: rgb(198, 213, 159);
+}
+
+.numbutton1:hover,
+.numbutton2:hover {
+    background: rgb(239, 255, 198);
+}
+
+.numbutton1 {
+    border-radius: 40px 0px 0px 40px;
+}
+
+.numbutton2 {
+    border-radius: 0px 40px 40px 0px;
+}
+
+.buynum {
+    display: inline-flex;
+    grid-area: 1/1/3/2;
+    padding: 10px 0px;
+}
+
+.buynum>input {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+
+/*標籤切換block2內的hr*/
+
+.detailcontent .commentbtdown {
+    width: 100%;
+    border: 2px solid #91d6c8;
+    margin: 10px auto;
+    display: flex;
+}

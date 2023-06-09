@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="image/icon/avocado.png">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/allproduct.css">
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- 搜尋框放大鏡圖示連結 -->
+    <script src="https://kit.fontawesome.com/fd066d1aee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <!-- scrip -->
+     <script>
+        function openDialog(dialogId) {
+            var dialog = document.getElementById(dialogId);
+            dialog.showModal();
+        }
+
+        function closeDialog(dialogId) {
+            var dialog = document.getElementById(dialogId);
+            dialog.close();
+        }
+    </script>
+
+    <!-- header -->
+    <header>
+        <!-- 左邊logo -->
+        <div>
+            <a href="index.html" class="logo">
+                <img src="image/icon/title.png" class="headerimg">
+            </a>
+        </div>
+
+        <!-- 超連結標籤 -->
+        <nav class="headernav">
+            <div>
+                <ul class="headerul">
+                    <li class="label">
+                        <select name="select" class="selectbar" onchange="javascript:location.href=this.value;">
+                            <option class="headeroption" value="#">商品類別</option>
+                            <option class="headeroption" value="allproduct.html">所有商品</option>
+                            <option class="headeroption" value="dolls.html">大型玩偶</option>
+                            <option class="headeroption" value="papertapes.html">紙膠帶</option>
+                            <option class="headeroption" value="mobile.html">智慧型產品周邊</option>
+                        </select>
+                    </li>
+                    <li class="label">
+                        <a href="aboutus.html" class="choose">關於我們</a>
+                    </li>
+                    <li class="label">
+                        <a href="qa.html" class="choose">常見問題</a>
+                    </li>
+                    <li class="label">
+                        <a href="cart.html" class="choose">購物車</a>
+                    </li>
+                    <li class="label">
+                        <!-- 開啟對話框 -->
+                        <button onclick="openDialog('login')" class="choose headerbutton">會員中心</button>
+                        <!-- 對話框內容 -->
+                        <dialog id="login" class="headerdialog"> 
+                            <h2 class="headerh2">登入／註冊</h2>
+                            <hr class="headerhr">
+                            <p class="headerp">已有帳號，立即登入！</p>
+                            <input type="button" value="登入" class="allbutton" onclick="location.href='login.html'">
+                            <hr class="headerhr">
+                            <p class="headerp">還沒有帳號嗎？立即註冊！</p>
+                            <input type="button" value="註冊" class="allbutton" onclick="location.href='register.html'">
+                            <hr class="headerhr">
+                            <button onclick="closeDialog('login')" class="headerin">訪客模式</button>
+                        </dialog>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 搜尋欄 -->
+            <div class="wrap">
+                <div class="search">
+                    <input class="searchbar" type="text" name="search" id="search" placeholder=" Search for something?">
+                    <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- about us / person -->
+    <!-- title -->
+    <div class="ustitle">
+        <h2>關於我們</h2>
+    </div>
+    <!-- 前端 -->
+    <div class="card">
+        <section>
+            <img src="image/aboutus/ut.jpg" class="usimg">
+            <h3 class="ush3">沈芋廷</h3>
+            <p class="usp">前端成員</p>
+            <div class="usicon">
+                <a href="https://www.instagram.com/utx59/" target="_blank"><i class="fa-brands fa-instagram usi"></i></a>
+                <a href="https://www.facebook.com/utx59" target="_blank"><i class="fa-brands fa-facebook-f usi"></i></a>
+                <a href="mailto:utx@gmai1.com"><i class="fa-regular fa-envelope usi"></i></a>
+            </div>
+            <div class="ustext">
+                這份專案我們從四月中開始準備，從一開始的架構到最後的細節都經過組員們層層討論，對於每個介面的要求也精益求精，非常感謝我的組員們一起熬夜討論。從無到有將前端撐起來並不是一件容易的事情，每一行程式碼都是親手打下，直到最終看到成品也覺得非常驚奇。無論是前端或後端都缺一不可，辛苦大家了～
+            </div>
+        </section>
+        <section>
+            <img src="image/aboutus/meythy.jpg" class="usimg">
+            <h3 class="ush3">劉胤苓</h3>
+            <p class="usp">前端成員</p>
+            <div class="usicon">
+                <a href="https://instagram.com/0519amethyst/" target="_blank"><i class="fa-brands fa-instagram usi"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100010589287166&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook-f usi"></i></a>
+                <a href="mailto:s0980258@gmai1.com"><i class="fa-regular fa-envelope usi"></i></a>
+            </div>
+            <div class="ustext">
+                歷經一個多月的專題報告，終於有了些成果。從討論、排版、擬稿，一直到製作網頁和修改檔案，真的耗費了不少精力。所幸組員們都十分認真，努力去完成工作，最後的結果也盡力達成了理想的樣子，當然有些部分還能做得更好，我們也會繼續加油！感謝我的組員們付出的努力，大家都辛苦了！
+            </div>
+        </section>
+        <section>
+            <img src="image/aboutus/yizhen.jpg" class="usimg">
+            <h3 class="ush3">林苡臻</h3>
+            <p class="usp">前端成員</p>
+            <div class="usicon">
+                <a href="https://instagram.com/yizhen.0327/" target="_blank"><i class="fa-brands fa-instagram usi"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100004833618388&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook-f usi"></i></a>
+                <a href="mailto:emily92225@gmail.com"><i class="fa-regular fa-envelope usi"></i></a>
+            </div>
+            <div class="ustext">
+                這次學習前端UI介面，覺得與後端的差別在於，前端需先前構思網頁整體框架、主題色調及思考後端處理過程，雖然這次合作時間比上學期充沛，但還有些設計部分覺得能再精美且多設計js、css的動態效果。對於這次兩班合作前後端的協調能力，我覺得很和諧，也希望自己日後能有機會獨自包辦前後端，撰寫出屬於自己獨有的網站！
+            </div>
+        </section>
+    </div>
+        <!-- <div class="clear"></div> -->
+
+    <!-- 後端 -->
+    <div class="card2">
+        <section>
+            <img src="image/aboutus/jia.jpg" class="usimg">
+            <h3 class="ush3">潘莛家</h3>
+            <p class="usp">後端成員</p>
+            <div class="usicon">
+                <a href="https://instagram.com/tingjia_1015/" target="_blank"><i class="fa-brands fa-instagram usi"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100030372563281&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f usi"></i></a>
+                <a href="mailto:tingjia1015@gmail.com"><i class="fa-regular fa-envelope usi"></i></a>
+            </div>
+            <div class="ustext">
+                此次網程的課程，教導了我們html, sql和jsp，在短短一個學期的期間讓我們了解前後端的內容，因為程式能力不足，上課時老師也未必會公布解答，我花了更多的時間去詢問同學相關的問題，在摸索中練習。雖然成果依然不好，但還是很感謝同學的幫忙與組員的協助，前端的同學也很快的將檔案交出，讓我們可以更早撰寫程式。感謝教授的指導與前後端的組員們！！
+            </div>
+        </section>
+        <section>
+            <img src="image/aboutus/yilin.jpg" class="usimg">
+            <h3 class="ush3">潘葉依琳</h3>
+            <p class="usp">後端成員</p>
+            <div class="usicon">
+                <a href="https://instagram.com/yilin.1220/" target="_blank"><i class="fa-brands fa-instagram usi"></i></a>
+                <a href="https://www.facebook.com/linda.ye.7798?mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook-f usi"></i></a>
+                <a href="mailto:linda580798@gmail.com"><i class="fa-regular fa-envelope usi"></i></a>
+            </div>
+            <div class="ustext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ullam cumque ducimus earum aliquid explicabo harum? Iste distinctio facilis culpa eveniet quae. Consequatur esse nostrum optio vel laborum rem illum voluptas tempora eum, eligendi quaerat autem ipsa natus, iure minima eius libero reiciendis ipsam accusantium provident adipisci ea reprehenderit consequuntur.
+            </div>
+        </section>
+        <section>
+            <img src="image/aboutus/xin.jpg" class="usimg">
+            <h3 class="ush3">翁苡馨</h3>
+            <p class="usp">後端成員</p>
+            <div class="usicon">
+                <a href="https://www.instagram.com/w.yx__0630/" target="_blank"><i class="fa-brands fa-instagram usi"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100002670874548" target="_blank"><i class="fa-brands fa-facebook-f usi"></i></a>
+                <a href="mailto:awe20424awe@gmail.com"><i class="fa-regular fa-envelope usi"></i></a>
+            </div>
+            <div class="ustext">
+                這學期換我們跟乙班的角色進行對換，我們開始了後端的課程，從學習的過程中，我逐漸理解到後端的不易，以及解開了當初對後端好奇的許多問題，我覺得這堂課讓我學到了許多，也更知道前端跟後端該如何進行溝通，以及各自的需求是什麼，通過不斷的與組員討論、分工、改進，更好的提升了對這門課的了解，也累積了經驗，跟大家一同成長、努力，讓我更加的努力也更有踏實感～～
+            </div>
+        </section>
+        <section>
+            <img src="image/aboutus/hua.jpg" class="usimg">
+            <h3 class="ush3">黃芊華</h3>
+            <p class="usp">後端成員</p>
+            <div class="usicon">
+                <a href="https://www.instagram.com/hua.0102/" target="_blank"><i class="fa-brands fa-instagram usi"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100015781570017&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook-f usi"></i></a>
+                <a href="mailto:weixi2047@gmail.com"><i class="fa-regular fa-envelope usi"></i></a>
+            </div>
+            <div class="ustext">
+                這次後端是一個全新的大挑戰，完全沒有嘗試過的，根本就是結合大一大二畢生所學，比起前端可以發揮自己的想法，除了程式以外還有很多是美感的設計，後端真的就是日復一日的coding ，雖然心很累，但很開心能跟大家一起合作，在這堂課也學到了很多之前從來沒有學過但未來一定會用到的語法，是一個全新的資管生活！希望之後也能成為一個成功的程式人；）
+            </div>
+        </section>
+    </div>
+
+    <!-- address -->
+    <div class="ustitle">
+        <h2>我們的位置</h2>
+    </div>
+    <div class="usmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.256606719103!2d121.23820147525014!3d24.957382677866118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1684936732356!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="usiframe"></iframe>
+    </div>
+
+    <!-- 合作 -->
+    <div class="ustitle">
+        <h2>合作夥伴</h2>
+    </div>
+
+    <div class="usiconarea">
+        <a href="https://jellycat.waca.tw/"><img src="image/icon/jellycat.png" class="usicon2"></a>
+        <a href="https://www.loidesign.store/"><img src="image/icon/tape.png" class="usicon2"></a>
+        <a href="https://dinotaeng.com/"><img src="image/icon/dinotaeng.png" class="usicon2"></a>
+    </div>
+
+    <section>
+        <!--回頂端圖件-->
+        <a href="#00" class="gotop">
+          <img src="image/icon/gotop.png" style="border-radius:50% ;" class="backtop">
+        </a>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <h5 class="footerh5">
+            ©neversleepiland 2023<br>
+            瀏覽人數：100人<br>
+            <a href="aboutus.html" target="_blank">about us</a> | <a href="qa.html" target="_blank">Q&A</a>
+        </h5>
+    </footer>
+</body>
+</html>

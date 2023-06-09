@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"> 
+        <title>Star Rating Form | CodingNepal</title>
+        <link rel="stylesheet" href="css/allcomment.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head> 
+    <body class="detailcontent"> 
+        <div class="allcomment">
+            <!--評論按鈕-->
+            <div class="intocomment">
+                <button type="submit">我要評論！</button>
+            </div>
+            <!--感謝評論-->
+            <div class="thankcomment">
+                <div class="thanktext">
+                    Thanks for rating us!
+                </div>
+                <div class="edit">
+                    EDIT
+                </div>
+            </div>
+            <!--評論-->
+            <div class="comment">
+                <div class="commenttitle">
+                    <h2>評論</h2>
+                    <!--<button type="button" class="btn-close" id="close" aria-label="Close"></button>-->
+                </div>
+                <form action="#">
+                    <!--星星-->
+                    <div class="star">
+                        <input type="radio" name="rate" id="star5">
+                        <label for="star5" class="fas fa-star"></label>
+
+                        <input type="radio" name="rate" id="star4">
+                        <label for="star4" class="fas fa-star"></label>
+
+                        <input type="radio" name="rate" id="star3">
+                        <label for="star3" class="fas fa-star"></label>
+
+                        <input type="radio" name="rate" id="star2">
+                        <label for="star2" class="fas fa-star"></label>
+
+                        <input type="radio" name="rate" id="star1">
+                        <label for="star1" class="fas fa-star"></label>
+                    </div>
+                    <!--評論輸入框-->
+                    <div class="textarea">
+                        <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                    </div>
+                    <!--評論送出-->
+                    <div class="getcomment">
+                        <button type="submit">送出</button>
+                    </div>
+                    
+                </form> 
+            </div>
+
+            <!--comment js-->
+            <script>
+                const intocomment = document.querySelector(".intocomment");
+                const getcomment = document.querySelector(".getcomment");
+                const thankcomment = document.querySelector(".thankcomment");
+                const comment = document.querySelector(".comment");
+                const editBtn = document.querySelector(".edit");
+                const closebtn= document.querySelector(".close");
+                intocomment.onclick= () => {
+                    comment.style.display = "block";
+                    intocomment.style.display = "none";
+                    /*close.addEventListener("click", function(){
+                    comment.close();})
+                    closebtn.onclick= () => {
+                        comment.style.display = "none";
+                    }*/
+                    getcomment.onclick= () => {
+                        intocomment.style.display = "none";
+                        comment.style.display = "none";
+                        thankcomment.style.display = "block";
+                        editBtn.onclick = () => {
+                            comment.style.display = "block";
+                            thankcomment.style.display = "none";
+                        }
+                        return false;
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

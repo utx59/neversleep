@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile</title>
+    <link rel="icon" type="image/x-icon" href="image/icon/avocado.png">
+    <link rel="stylesheet" href="css/allproduct.css">
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <!-- 搜尋框放大鏡圖示連結 -->
+    <script src="https://kit.fontawesome.com/fd066d1aee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- scrip -->
+    <script>
+        function openDialog(dialogId) {
+            var dialog = document.getElementById(dialogId);
+            dialog.showModal();
+        }
+
+        function closeDialog(dialogId) {
+            var dialog = document.getElementById(dialogId);
+            dialog.close();
+        }
+    </script>
+
+    <!-- header -->
+    <header id="00">
+        <!-- 左邊logo -->
+        <div>
+            <a href="index.html" class="logo">
+                <img src="image/icon/title.png" class="headerimg">
+            </a>
+        </div>
+
+        <!-- 超連結標籤 -->
+        <nav class="headernav">
+            <div>
+                <ul class="headerul">
+                    <li class="label">
+                        <select name="select" class="selectbar" onchange="javascript:location.href=this.value;">
+                            <option class="headeroption" value="#">商品類別</option>
+                            <option class="headeroption" value="allproduct.html">所有商品</option>
+                            <option class="headeroption" value="dolls.html">大型玩偶</option>
+                            <option class="headeroption" value="papertapes.html">紙膠帶</option>
+                            <option class="headeroption" value="mobile.html">智慧型產品周邊</option>
+                        </select>
+                    </li>
+                    <li class="label">
+                        <a href="aboutus.html" class="choose">關於我們</a>
+                    </li>
+                    <li class="label">
+                        <a href="qa.html" class="choose">常見問題</a>
+                    </li>
+                    <li class="label">
+                        <a href="cart.html" class="choose">購物車</a>
+                    </li>
+                    <li class="label">
+                        <!-- 開啟對話框 -->
+                        <button onclick="openDialog('login')" class="choose headerbutton">會員中心</button>
+                        <!-- 對話框內容 -->
+                        <dialog id="login" class="headerdialog"> 
+                            <h2 class="headerh2">登入／註冊</h2>
+                            <hr class="headerhr">
+                            <p class="headerp">已有帳號，立即登入！</p>
+                            <input type="button" value="登入" class="allbutton" onclick="location.href='login.html'">
+                            <hr class="headerhr">
+                            <p class="headerp">還沒有帳號嗎？立即註冊！</p>
+                            <input type="button" value="註冊" class="allbutton" onclick="location.href='register.html'">
+                            <hr class="headerhr">
+                            <button onclick="closeDialog('login')" class="headerin">訪客模式</button>
+                        </dialog>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 搜尋欄 -->
+            <div class="wrap">
+                <div class="search">
+                    <input class="searchbar" type="text" name="search" id="search" placeholder=" Search for something?">
+                    <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- allproduct menu -->
+    <aside>
+        <ul>
+            <a href="allproduct.html" class="allgoods">商品目錄</a>
+            <hr>
+            <li>
+                <a class="asidemenu1"><i class="fas fa-angle-right dropdown"></i>大型玩偶</a>
+                <ul class="detailmenu1">
+                    <li class="detailproject"><a href="avocado.html">酪梨寶寶</a></li>
+                    <li class="detailproject"><a href="smile.html">微笑豆苗</a></li>
+                    <li class="detailproject"><a href="pretzel.html">紐結麵包寶寶</a></li>
+                    <li class="detailproject"><a href="blossom bunny.html">馬卡龍粉粹花愛心兔</a></li>
+                    <li class="detailproject"><a href="lemon bunny.html">檸檬黃兔</a></li>
+                    <li class="detailproject"><a href="coffee.html">拿鐵灰兔</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="asidemenu2"><i class="fas fa-angle-right dropdown"></i>紙膠帶</a>
+                <ul class="detailmenu2">
+                    <li class="detailproject"><a href="Aromatic.html">郁色</a></li>
+                    <li class="detailproject"><a href="Meteor.html">光隙Meteor</a></li>
+                    <li class="detailproject"><a href="Blinking.html">爍色Twinkle</a></li>
+                    <li class="detailproject"><a href="MyDear.html">My Dear</a></li>
+                    <li class="detailproject"><a href="BusinessTrip.html">出差少女Business Trip</a></li>
+                    <li class="detailproject"><a href="Life.html">美好生活 Life</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="asidemenu3"><i class="fas fa-angle-right dropdown"></i>智慧型產品周邊</a>
+                <ul class="detailmenu3">
+                    <li class="detailproject"><a href="Bighead_mat.html">Quakka(大頭)滑鼠墊</a></li>
+                    <li class="detailproject"><a href="Marshmallow_mat.html">Quakka(棉花糖)滑鼠墊</a></li>
+                    <li class="detailproject"><a href="Space_mat.html">Quakka(外太空)滑鼠墊</a></li>
+                    <li class="detailproject"><a href="Quakka_bag.html">Quakka筆電包</a></li>
+                    <li class="detailproject"><a href="Marshmallow_bag.html">棉花糖筆電包</a></li>
+                    <li class="detailproject"><a href="Quakka papa_earphone case.html">Quakka papa 耳機殼</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <!-- detailproject openjsp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>        
+        $(document).ready(function(){
+            $('.asidemenu1').click(function(){
+                $(this).next('.detailmenu1').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+                $(".detailmenu2").hide("slow");
+                $(".detailmenu3").hide("slow");
+            });
+
+            $('.asidemenu2').click(function(){
+                $(this).next('.detailmenu2').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+                $(".detailmenu1").hide("slow");
+                $(".detailmenu3").hide("slow");
+            });
+            $('.asidemenu3').click(function(){
+                $(this).next('.detailmenu3').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+                $(".detailmenu1").hide("slow");
+                $(".detailmenu2").hide("slow");
+            });
+        });
+    </script>
+
+    <!-- mobile -->
+    <div class="title3">
+        <h2>智慧型產品周邊</h2>
+    </div>
+    <div class="card">
+        <section>
+            <img src="image/mobile/Bighead_mat.jpg" class="allimg">
+            <h3>Quakka（大頭）滑鼠墊</h3>
+            <h4>NT $150</h4>
+
+            <!-- 查看資訊按鈕 -->
+            <button type="submit" name="good" value="13" class="allbutton" onclick="window.location.href='Bighead_mat.html'">查看資訊</button>
+            <!-- 加入購物車按鈕 -->
+            <button onclick="openDialog('infoModal')" class="allbutton"> 加入購物車 </button>
+
+            <!-- 對話框內容 -->
+            <dialog id="infoModal"> 
+                <p>該商品已加入購物車！<br>可以繼續購物啦！</p>
+                <button onclick="closeDialog('infoModal')" class="allbutton">確認</button>
+            </dialog>
+        </section>
+        <section>
+            <img src="image/mobile/Marshmallow_mat.jpg" class="allimg">
+            <h3>Quakka（棉花糖）滑鼠墊</h3>
+            <h4>NT $150</h4>
+
+            <!-- 查看資訊按鈕 -->
+            <button type="submit" name="good" value="14" class="allbutton" onclick="window.location.href='Marshmallow_mat.html'">查看資訊</button>
+            <!-- 加入購物車按鈕 -->
+            <button onclick="openDialog('infoModal')" class="allbutton"> 加入購物車 </button>
+
+            <!-- 對話框內容 -->
+            <dialog id="infoModal"> 
+                <p>該商品已加入購物車！<br>可以繼續購物啦！</p>
+                <button onclick="closeDialog('infoModal')" class="allbutton">確認</button>
+            </dialog>
+        </section>
+        <section>
+            <img src="image/mobile/Space_mat.jpg" class="allimg">
+            <h3>Quakka（外太空）滑鼠墊</h3>
+            <h4>NT $150</h4>
+
+            <!-- 查看資訊按鈕 -->
+            <button type="submit" name="good" value="15" class="allbutton" onclick="window.location.href='Space_mat.html'">查看資訊</button>
+            <!-- 加入購物車按鈕 -->
+            <button onclick="openDialog('infoModal')" class="allbutton"> 加入購物車 </button>
+
+            <!-- 對話框內容 -->
+            <dialog id="infoModal"> 
+                <p>該商品已加入購物車！<br>可以繼續購物啦！</p>
+                <button onclick="closeDialog('infoModal')" class="allbutton">確認</button>
+            </dialog>
+        </section>
+        <section>
+            <img src="image/mobile/Quakka_bag.jpg" class="allimg">
+            <h3>Quakka筆電包</h3>
+            <h4>NT $1380</h4>
+
+            <!-- 查看資訊按鈕 -->
+            <button type="submit" name="good" value="16" class="allbutton" onclick="window.location.href='Quakka_bag.html'">查看資訊</button>
+            <!-- 加入購物車按鈕 -->
+            <button onclick="openDialog('infoModal')" class="allbutton"> 加入購物車 </button>
+
+            <!-- 對話框內容 -->
+            <dialog id="infoModal"> 
+                <p>該商品已加入購物車！<br>可以繼續購物啦！</p>
+                <button onclick="closeDialog('infoModal')" class="allbutton">確認</button>
+            </dialog>
+        </section>
+        <section>
+            <img src="image/mobile/Marshmallow_bag.jpg" class="allimg">
+            <h3>棉花糖筆電包</h3>
+            <h4>NT $1380</h4>
+
+            <!-- 查看資訊按鈕 -->
+            <button type="submit" name="good" value="17" class="allbutton" onclick="window.location.href='Marshmallow_bag.html'">查看資訊</button>
+            <!-- 加入購物車按鈕 -->
+            <button onclick="openDialog('infoModal')" class="allbutton"> 加入購物車 </button>
+
+            <!-- 對話框內容 -->
+            <dialog id="infoModal"> 
+                <p>該商品已加入購物車！<br>可以繼續購物啦！</p>
+                <button onclick="closeDialog('infoModal')" class="allbutton">確認</button>
+            </dialog>
+        </section>
+        <section>
+            <img src="image/mobile/Quakka papa_earphone case.jpg" class="allimg">
+            <h3>Quakka papa 耳機殼</h3>
+            <h4>NT $570</h4>
+
+            <!-- 查看資訊按鈕 -->
+            <button type="submit" name="good" value="18" class="allbutton" onclick="window.location.href='Quakka papa_earphone case.html'">查看資訊</button>
+            <!-- 加入購物車按鈕 -->
+            <button onclick="openDialog('infoModal')" class="allbutton"> 加入購物車 </button>
+
+            <!-- 對話框內容 -->
+            <dialog id="infoModal"> 
+                <p>該商品已加入購物車！<br>可以繼續購物啦！</p>
+                <button onclick="closeDialog('infoModal')" class="allbutton">確認</button>
+            </dialog>
+        </section>
+        <section>
+            <!--回頂端圖件-->
+            <a href="#00" class="gotop">
+              <img src="image/icon/gotop.png" style="border-radius:50% ;" class="backtop">
+            </a>
+        </section>
+    </div>
+    
+    <!-- footer -->
+    <div class="fixclear"></div>
+    <footer>
+        <h5 class="footerh5">
+            ©neversleepiland 2023<br>
+            瀏覽人數：100人<br>
+            <a href="aboutus.html" target="_blank">about us</a> | <a href="qa.html" target="_blank">Q&A</a>
+        </h5>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+body {
+    background-color: #fefae0;
+}
+
+.register {
+    padding: 20px;
+    width: 75%;
+    text-align: center;
+}
+
+.block {
+    width: 100%;
+    padding: 10px 5%;
+    background: rgb(248, 225, 206);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.register h2 {
+    font-size: 40px;
+    line-height: 2;
+}
+
+.inputtxt {
+    width: 65%;
+    display: flex;
+    border-radius: 10px;
+    margin: 0px;
+    font-size: 18px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    border: inset black;
+}
+
+.txt {
+    width: 80%;
+    padding: 15px 0px;
+    font-weight: bolder;
+    display: inline-flex;
+}
+
+label {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.txt h3 {
+    width: 28%;
+    padding-right: 10px;
+    font-size: 25px;
+    text-align: right;
+    word-wrap: wrap;
+    margin: 0px;
+}
+
+.button .submit {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 25%;
+    height: 50px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(237, 185, 155);
+    border: 3px solid rgb(130, 90, 72);
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+    margin: 5px;
+}
+
+.submit:hover {
+    background-color: rgb(255, 239, 183);
+    border: 3px solid rgb(208, 149, 98);
+    width: 30%;
+    height: 55px;
+}
+
+button.submit,
+.button {
+    align-items: center;
+    text-align: center;
+    background: rgb(248, 225, 206);
+}
+
+.gotop {
+    position: fixed;
+    bottom: 2%;
+    width: 5%;
+    height: auto;
+    right: 2%;
+    float: right;
+    z-index: 99;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+iframe {
+    vertical-align: bottom;
+}

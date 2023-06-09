@@ -1,0 +1,85 @@
+.ustitle {
+    text-align: center;
+    margin: 40px;
+}
+
+.usimg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.ush3 {
+    text-align: center;
+    padding: 0px 20px;
+    color: #606c38;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.usp {
+    font-size: 14px;
+    color: #606c38;
+}
+
+.usicon {
+    margin: 10px;
+}
+
+.usi {
+    color: #ccd5ae;
+    margin: 5px;
+}
+
+.ustext {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.usiframe {
+    width: 800px;
+    height: 500px;
+    border: 2px solid #606c38;
+}
+
+.usmap {
+    text-align: center;
+}
+
+.card1 {
+    width: 70%;
+    align-items: flex-start;
+    text-align: center;
+    float: inline-start;
+    /* float: right; */
+    display: grid;
+    grid-template-columns: repeat(1fr, 12);
+    grid-auto-flow: auto;
+    grid-gap: 10px;
+}
+
+.usiconarea {
+    text-align: center;
+}
+
+.usicon2 {
+    height: 90px;
+    /* margin: 5px; */
+}
+
+.card2 {
+    width: 90%;
+    align-items: flex-start;
+    text-align: center;
+    float: inline-start;
+    /* float: right; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: auto;
+    grid-gap: 8px;
+}
+
+.clear {
+    clear: both;
+}

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family-Poppins:400, 500, 600, 700&display-swap');
+
+.allcomment {
+    display: grid;
+    height: auto;
+    place-items: center;
+    text-align: center;
+    background: rgba(197, 240, 154, 0);
+}
+
+.comment,
+.thankcomment {
+    position: relative;
+    width: 57%;
+    background: rgba(197, 240, 154, 0.734);
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    /*display: flex;*/
+}
+
+.comment .commenttitle h2 {
+    font-size: 35px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    margin-bottom: 10px;
+}
+
+/*
+.commenttitle {
+    display: flex;
+    //align-items: center;
+    justify-content: flex-end;
+}*/
+
+/*確認評論*/
+.thankcomment {
+    display: none;
+    text-align: center;
+}
+
+.thanktext {
+    font-size: 27px;
+    color: #666;
+    font-weight: 500;
+}
+
+.edit {
+    font-size: 16px;
+    color: #666;
+    background: rgb(208, 225, 204);
+    border: 1px solid #666;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 3px 0px;
+}
+
+.edit:hover {
+    background: rgb(255, 255, 208);
+}
+
+/*星星評價*/
+.star {
+    display: inline-block;
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.star label {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+    white-space: wrap;
+}
+
+
+.star input {
+    display: none;
+}
+
+
+.star input:not(:checked)~label:hover,
+.star input:not(:checked)~label:hover~label {
+    color: #fd7;
+    text-shadow: 0 0 5px #952;
+}
+
+.star input:checked~label {
+    color: #fd4;
+    text-shadow: 0 0 10px #952;
+}
+
+/*評論按鈕 & 評論 & 感謝評論 的變換*/
+.comment {
+    display: none;
+}
+
+.intocomment button:active~.comment,
+.comment form {
+    display: block;
+}
+
+.getcomment button:active~.thankcomment {
+    display: block;
+}
+
+/*評論輸入文字*/
+.textarea {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.textarea textarea {
+    height: 100%;
+    width: 100%;
+    /*outline: none;*/
+    color: rgb(45, 72, 53);
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: justify;
+    white-space: wrap;
+    border: 1px solid #333;
+    background: rgba(232, 242, 222, 0.734);
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+
+.textarea textarea:focus {
+    border-color: #444;
+}
+
+/*傳送評論*/
+.getcomment {
+    height: 8%;
+    /*width: 100%;*/
+    margin-top: 15px;
+}
+
+.getcomment button {
+    width: 100%;
+    border: 1px solid #444;
+    border-radius: 10px;
+    /*outline: none;*/
+    background: rgb(190, 232, 154);
+    color: rgb(60, 95, 60);
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    /*text-transform: uppercase; 變大寫*/
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 0px;
+}
+
+.getcomment button:hover {
+    background: #f4ff91;
+    box-shadow: 0 0 10px rgb(143, 203, 117);
+}
+
+/*評論按鈕*/
+.intocomment button {
+    width: 200px;
+    height: 50px;
+    background: rgba(197, 240, 154, 0.734);
+    font-size: 25px;
+    margin: 5px 0px;
+    border-radius: 20px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+}
+
+.intocomment button:hover {
+    background: rgba(252, 255, 195, 0.954);
+    box-shadow: 0 0 20px rgb(144, 180, 124);
+}
+
+
+/*close*/
+.commenttitle h2 {
+    display: inline;
+    padding-left: 20px;
+}
+
+.commenttitle .close {
+    float: right;
+    background-image: url(../image/icon/close.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    opacity: 0.2;
+}
+
+.commenttitle .close:hover {
+    opacity: 0.5;
+}
+
+/*.btn-close {
+    width: 2pc;
+    height: 2pc;
+    padding: 0.25em 0.25em;
+    color: #000;
+    background: transparent url("../image/icon/close.png") center/1em auto no-repeat;
+    border-radius: 0.25rem;
+    opacity: 0.2;
+    margin-left: 25%;
+}
+
+.btn-close:hover {
+    opacity: 0.5;
+}*/
+
+/*dialog*/
+/*dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.1);
+}*/
