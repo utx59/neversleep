@@ -129,3 +129,12 @@ dialog::backdrop {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
+
+.clearfix {
+    clear: both;
+}
+
+.outer {
+    display: flex;
+    justify-content: center;
+}
