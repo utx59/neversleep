@@ -70,6 +70,7 @@
 
 .card2 {
     width: 90%;
+    margin-left: 5%;
     align-items: flex-start;
     text-align: center;
     float: inline-start;
@@ -82,4 +83,16 @@
 
 .clear {
     clear: both;
+}
+
+.card3 {
+    width: 90%;
+    margin-left: 5%;
+    align-items: flex-start;
+    text-align: center;
+    float: inline-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: auto;
+    grid-gap: 10px;
 }
